@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="75.842654">
+    <testcase classname="To validate flipkart login functionality" name="To validate invalid mailid and invalid password" time="67.068875">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.FlipkartLogin.to_get_pagetitle(FlipkartLogin.java:34)&#13;&#10;&#9;at ✽.To get pagetitle(file:src/test/resources/FeatureFiles/Flipkart.feature:9)&#13;&#10;"><![CDATA[Given To get Flipkart url...................................................passed
+When To enter value in email field..........................................passed
+And To enter value in password field........................................passed
+And To click signin button..................................................passed
+Then To get pagetitle.......................................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.FlipkartLogin.to_get_pagetitle(FlipkartLogin.java:34)
+	at ✽.To get pagetitle(file:src/test/resources/FeatureFiles/Flipkart.feature:9)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Login Functionality in Facebook Application" name="To validate login using invalid username and password" time="8.773779">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.LoginStepDefinition.user_click_login_button(LoginStepDefinition.java:46)&#13;&#10;&#9;at ✽.User click login button(file:src/test/resources/FeatureFiles/Login.feature:18)&#13;&#10;"><![CDATA[Given User is in facebook login page........................................passed
+When User enter valid username in email field...............................passed
+When User enter valid passord in password field.............................passed
+And User click login button.................................................failed
+Then User has to close the browser..........................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.LoginStepDefinition.user_click_login_button(LoginStepDefinition.java:46)
+	at ✽.User click login button(file:src/test/resources/FeatureFiles/Login.feature:18)
+]]></failure>
+    </testcase>
+</testsuite>
